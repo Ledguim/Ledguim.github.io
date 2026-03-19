@@ -7,6 +7,6 @@ btn.addEventListener('click', () => {
         text.innerText = input.value;
         input.value = ""; 
     } else {
-        alert("Please write something first!");
+        alert("Please write something first.");
     }
 });

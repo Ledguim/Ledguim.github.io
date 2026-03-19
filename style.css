@@ -1,59 +1,163 @@
-/* Fuente personalizada */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #6f0000;
-    color: #ecf0f1;
+    background-color: #1a1a1a; 
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
+    padding: 20px;
 }
+
 
 .container {
-    background-color: #861919;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    max-width: 700px;
+    
+    background-color: #2d2d2d;
+    padding: 40px;
+    border-radius: 12px;
+    
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    max-width: 750px;
+    width: 100%;
 }
 
-/* Estilo de la tabla */
+
+h1 {
+    
+    color: #f1c40f; 
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Subtítulos */
+h2 {
+    color: #f1c40f;
+    margin-top: 30px;
+}
+
+
+.personalInfo ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.personalInfo li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+
+
+.personalInfo strong {
+    color: #f1c40f; 
+    font-weight: 600;
+}
+
+
+.personalInfo a {
+    color: #f1c40f;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.personalInfo a:hover {
+    color: #f39c12; 
+    border-bottom: 1px solid #f39c12;
+}
+
+
 .skillsTable {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #ecf0f1;
-    color: #2c3e50;
+    margin: 30px 0;
+    background-color: #333333; 
+    color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden; 
 }
 
-.skillsTable th, .skillsTable td {
-    border: 1px solid #bdc3c7;
-    padding: 12px;
-    text-align: left;
-}
 
 .skillsTable th {
-    background-color: #e67e22; /* Color naranja para destacar */
-    color: white;
+    background-color: #f1c40f;
+    color: #1a1a1a; 
+    padding: 15px;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
 }
 
-/* El botón e input */
-button {
-    background-color: #e67e22;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+
+.skillsTable td {
+    border-bottom: 1px solid #444444; 
+    padding: 12px 15px;
 }
+
+
+.skillsTable tbody tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+
+.skillsTable tbody tr:hover {
+    background-color: #3d3d3d;
+}
+
+
+.interaction {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start; 
+}
+
+
+hr {
+    border: 0;
+    border-top: 1px solid #444444;
+    margin: 30px 0;
+}
+
+
+input[type="text"] {
+    background-color: #333333; 
+    color: #e0e0e0; 
+    border: 1px solid #444444; 
+    padding: 12px 15px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+input[type="text"]:focus {
+    outline: none; 
+    border-color: #f1c40f; 
+    box-shadow: 0 0 5px rgba(241, 196, 15, 0.3); 
+}
+
+button {
+    background-color: #f1c40f;
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
 
 button:hover {
-    background-color: #d35400;
+    background-color: #f39c12; 
 }
 
-input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 10px;
+
+button:active {
+    transform: translateY(1px);
 }
